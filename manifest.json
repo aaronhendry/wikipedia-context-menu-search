@@ -1,0 +1,36 @@
+{
+
+    "description": "Select text. Right click. Search Wikipedia for the selected text.",
+    "manifest_version": 2,
+    "name": "Wikipedia Context Menu Search",
+    "version": "1.9",
+    "homepage_url": "https://diedrich.me/contact/",
+    "icons": {
+        "64": "icons/page-64.png"
+
+    },
+
+    "applications": {
+        "gecko": {
+            "id": "@wikipediacontextmenusearch",
+            "strict_min_version": "52.0"
+        }
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "options_ui": {
+        "page": "options.html"
+    },
+
+
+    "permissions": [
+        "tabs",
+        "storage",
+        "contextMenus"
+    ]
+
+
+}
