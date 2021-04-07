@@ -17,7 +17,7 @@ browser.contextMenus.onClicked.addListener(function(info, tab) {
                 var tabBehaviour = item.tabBehaviour;
                 var tabActive = item.tabActive;
 https://nl.wikipedia.org/wiki/wiki.html?search=
-                var url = "https://" + language + ".wikipedia.org/wiki/wiki.html?search=" + encodeURIComponent(selectedText);
+                var url = "https://" + language + ".wikipedia.org/w/index.php?search=" + encodeURIComponent(selectedText);
                 if (tabBehaviour == "new") {
                     if (tabActive == "no") {
                         chrome.tabs.create({
